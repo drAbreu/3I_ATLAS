@@ -1,0 +1,126 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg
+*.egg-info/
+dist/
+build/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.manifest
+*.spec
+
+# Virtual Environments
+venv/
+env/
+ENV/
+.venv/
+.ENV/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+*/.ipynb_checkpoints/*
+.virtual_documents/
+
+# PyCharm
+.idea/
+*.iml
+
+# VS Code / Cursor
+.vscode/
+.cursor/
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Thumbnails
+Thumbs.db
+
+# Windows
+Desktop.ini
+$RECYCLE.BIN/
+
+# Scientific Python
+*.npy
+*.npz
+*.pkl
+*.pickle
+*.h5
+*.hdf5
+
+# Temporary data files (keep structure, ignore large data)
+# Uncomment specific patterns if needed:
+# *.csv
+# *.dat
+# *.txt
+
+# Temporary output files
+outputs/
+temp/
+tmp/
+scratch/
+
+# Large media files (uncomment if needed)
+# *.mp4
+# *.avi
+# *.mov
+
+# Log files
+*.log
+
+# Environment variables
+.env
+.env.local
+
+# Pytest
+.pytest_cache/
+.coverage
+htmlcov/
+
+# mypy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Documentation builds
+docs/_build/
+docs/_static/
+docs/_templates/
+
+# Sphinx
+_build/
+
+# JetBrains
+*.ipr
+*.iws
+.idea_modules/
+
+# Backup files
+*~
+*.bak
+*.swp
+*.swo
+*~
+
+# Project-specific
+# Add any project-specific ignores below:
+# For example, if you have large ephemeris files:
+# data/shared/ephemeris/*.bsp
+
+
+
+
