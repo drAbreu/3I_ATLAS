@@ -12,9 +12,9 @@ Each major analysis in this repository is paired with an explanatory article on 
 
 | Analysis Module | Educational Article (Medium) |
 | :--- | :--- |
+| **🎲 Monte Carlo Probability** | [Read: The Odds of an Interstellar "Fine-Tuned" Approach](https://medium.com/@datastar/the-3i-atlas-alien-mothership-claim-a-statistical-reality-check-b6f0f5126da2) |
 | **🎯 Jupiter Intercept** | [Read: Could we have caught 3I/ATLAS?](⚠️ In progress https://medium.com/your-article-link) |
 | **🎯 The WoW Signal** | [Could 3I ATLAS be related ot the WoW Signal?](⚠️ In progress https://medium.com/your-article-link) |
-| **🎲 Monte Carlo Probability** | [Read: The Odds of an Interstellar "Fine-Tuned" Approach](https://medium.com/@datastar/the-3i-atlas-alien-mothership-claim-a-statistical-reality-check-b6f0f5126da2) |
 | **🚀 Future Studies** | Stay tuned for more! |
 
 ---
