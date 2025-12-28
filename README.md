@@ -12,42 +12,38 @@ Each major analysis in this repository is paired with an explanatory article on 
 
 | Analysis Module | Educational Article (Medium) |
 | :--- | :--- |
-| **🎲 Monte Carlo Probability** | [Read: The Odds of an Interstellar "Fine-Tuned" Approach](https://medium.com/@datastar/the-3i-atlas-alien-mothership-claim-a-statistical-reality-check-b6f0f5126da2) |
-| **🎯 Jupiter Intercept** | [Read: Could we have caught 3I/ATLAS?](⚠️ In progress https://medium.com/your-article-link) |
-| **🎯 The WoW Signal** | [Could 3I ATLAS be related ot the WoW Signal?](⚠️ In progress https://medium.com/your-article-link) |
-| **🚀 Future Studies** | Stay tuned for more! |
+| **🎲 Monte Carlo Probability** | [The 3I/ATLAS "Fine-Tuned" Approach: A Statistical Reality Check](https://medium.com/@datastar/the-3i-atlas-alien-mothership-claim-a-statistical-reality-check-b6f0f5126da2) |
+| **🎯 Jupiter Intercept** | [Could we have caught 3I/ATLAS? The Physics of Intercept](https://medium.com/your-article-link) |
+| **📡 The WoW Signal** | [Could 3I/ATLAS be related to the WoW! Signal?](https://medium.com/your-article-link) |
 
 ---
 
 ## 🔬 Core Research Modules
 
 ### 1. Jupiter Intercept Analysis ✅
+**The Question:** Was 3I/ATLAS aimed at Jupiter's Hill radius, and could we have intercepted it?  
+**The Method:** We used the Lambert problem solver, high-precision JPL ephemerides (`de421.bsp`), and Monte Carlo simulations of 400,000 trajectories.  
+**The Verdict:** While initial data suggested a low-cost intercept (~5 km/s), refined orbital elements show a much higher requirement (~27 km/s). Furthermore, we demonstrate that passing through the Hill radius is a **50/50 event** for any object in Jupiter's neighborhood, demystifying the "aiming" claim.
 
-**The Question:** Could we have launched a mission to intercept 3I/ATLAS at Jupiter?
-**The Method:** We used the Lambert problem solver and JPL ephemeris data to calculate the required energy (ΔV).
-**The Verdict:** While theoretically possible with infinite fuel, a real-world intercept would require speeds far beyond our current technology.
+- **Explore Code:** `analyses/jupiter_intercept/`
+- **Documentation:** `docs/jupiter_intercept/`
+- **Visualizations:** `visualizations/jupiter_intercept/`
 
-- **Explore Code:** `analyses/jupiter-intercept/`
-- **Documentation:** `docs/jupiter_intercept.md`
-
-### 2. Monte Carlo Orbit Simulation 🎲
-
-**The Question:** Was 3I/ATLAS "fine-tuned" to pass close to Earth, or was it just a lucky coincidence?
-**The Method:** We ran 10,000 simulations, randomizing the arrival time while keeping the orbit fixed, to see how often a "triple hit" (Venus, Mars, and Jupiter) occurs.
-**The Verdict:** While a "Triple Hit" (passing within 100 MKM of any 3 planets) happens in about 6% of cases, the specific configuration observed is a remarkably precise instance of this class.
+### 2. General Monte Carlo Orbit Simulation 🎲
+**The Question:** Was 3I/ATLAS "fine-tuned" to pass close to Earth's vicinity?  
+**The Method:** We ran simulations randomizing the arrival time to see how often multi-planet encounters occur for this specific hyperbolic path.  
+**The Verdict:** A "Triple Hit" (passing within 100 MKM of any 3 planets) happens in about 6% of cases. The observed configuration is a precise instance of this broader statistical class.
 
 - **Explore Code:** `analyses/montecarlo_orbit_simulation/`
 - **Results Report:** `results/montecarlo_orbit_simulation/README.md`
-- **Visualizations:** `visualizations/montecarlo_orbit_simulation/`
 
 ---
 
-## 📂 Repository at a Glance
+## 📂 Repository Structure
 
 - `analyses/`: The "Engine Room" where all Python simulations live.
-- `docs/`: Explanatory guides and methodology reports.
-- `results/`: Summarized findings and final p-value calculations.
-- `visualizations/`: High-resolution plots and infographics for our Medium stories.
+- `docs/`: Explanatory guides and methodology reports for each figure.
+- `visualizations/`: High-resolution plots and infographics.
 - `data/`: Raw ephemeris and simulation outputs.
 
 ---
@@ -62,11 +58,11 @@ git clone https://github.com/drAbreu/3I_ATLAS.git
 cd 3I_ATLAS
 
 # 2. Setup your environment
-source .venv/bin/activate  # Highly recommended
+source .venv/bin/activate
 pip install -r requirements.txt
 
 # 3. Run a simulation
-python analyses/montecarlo_orbit_simulation/simulation.py
+python analyses/jupiter_intercept/plot_1c_monte_carlo.py
 ```
 
 ---
@@ -74,7 +70,5 @@ python analyses/montecarlo_orbit_simulation/simulation.py
 ## 📄 License
 
 This project is open-source under the MIT License. Feel free to use the code for your own interstellar research!
-
----
 
 **Last Updated**: December 2025
